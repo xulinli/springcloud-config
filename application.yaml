@@ -1,5 +1,5 @@
 spring:
-	peofiles:
+	profiles:
 		active:
 			-dev #当前使用的开发环境
 
