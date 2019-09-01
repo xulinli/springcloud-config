@@ -6,11 +6,11 @@ spring:
 ---
 spring:
   profiles: dev #开发环境
-    application:
-      name: config-server-dve
+  application:
+    name: config-server-dve
 
 ---
 spring:
   profiles: test	#测试环境
-    application:
-      name: config-server-test
+  application:
+    name: config-server-test
