@@ -1,0 +1,16 @@
+spring:
+	peofiles:
+		active:
+			-dev #当前使用的开发环境
+
+---
+spring:
+	profiles: dev #开发环境
+		application:
+			name: config-server-dve
+
+---
+spring:
+	profiles: test	#测试环境
+		application:
+			name: config-server-test
