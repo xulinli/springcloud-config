@@ -1,0 +1,27 @@
+server:
+  port: 2001
+
+spring:
+  application:
+    name: manage-web-service-brand #微服务的名称
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/shop?serverTimezone=Asia/Shanghai
+    username: root
+    password: Xu1234567@
+mybatis:
+  type-aliases-package: entity
+  mapper-locations: classpath:mapper/*Mapper.xml
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: manage-brand-service2001
+    prefer-ip-address: true #显示IP，不再显示localhost
+  client:
+    service-url:
+      defaultZone: http://eureka01.com:1001/eureka/,http://eureka02.com:1002/eureka/,http://eureka03.com:1003/eureka/
+pagehelper:
+  reasonable: false
+  support-methods-arguments: true
+  params: count=countSql
+
