@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active:
+    - dev
+---
+spring:
+  profiles: dev
+server:
+  port: 3001
+feign:
+  hystrix:
+    enabled: true
