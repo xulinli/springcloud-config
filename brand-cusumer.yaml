@@ -3,6 +3,7 @@ spring:
     active:
     - dev
 ---
+content: 大功告成
 spring:
   profiles: dev
 server:
